@@ -1,0 +1,40 @@
+e.target.closest(".product__quantity-controls") поиск родителя с классом;       npm run build
+element.classList.contains("product__quantity-control_dec");
+document.querySelectorAll(".product__quantity-control";
+element.nextElementSibling.textContent--;
+.findIndex(функция) возвращает индекс или -1;
+
+e.preventDefault(); не переходить по ссылке
+
+let productNode = document.createElement('div');
+      productNode.className = "cart__product";
+      productNode.dataset.id = perentElement.dataset.id;
+      productNode.innerHTML = `<img class="cart__product-image" src="${img.src}">
+                           <div class="cart__product-count">${value.textContent}</div>
+                           <div class="cart__remove">x</div>
+                           `;
+
+cartProducts.insertAdjacentHTML("beforeend", productNode);вставить html много параметров;
+document.body.append(div) вставить;
+element.innerHTML = htmlString;
+innerText: "Alexander Pierce"
+addEventListener("click",(e)=>
+str.trim()- удалить все пробелы из строки.
+.forEach() выполнить для каждого элемента массива;
+dataArr = data.split('') преобразовать строку дата в массив;
+ParentNode.append() позволяет добавлять DOMString объекты,
+
+localStorage.removeItem('myCat'); // вернёт undefined
+
+node.remove()
+
+function getCookie(name) {
+   const cookies = document.cookie.split("; ");
+   for (const c of cookie) {
+      const [key, value] = c.split("=")
+      if (key === name) {
+         return value
+      }
+   }
+   return null
+}
