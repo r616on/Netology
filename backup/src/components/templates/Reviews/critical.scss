@@ -1,0 +1,84 @@
+@import "../../hooks/media_mixin.scss";
+
+.content_body {
+  max-width: 910px;
+  margin: 0 auto;
+}
+.headReviews {
+  & > :nth-child(n) {
+    margin-bottom: 25px;
+  }
+}
+.segmented_block {
+  display: flex;
+  align-items: center;
+}
+.segmented_block_img {
+  margin-right: 10px;
+}
+.segmented_img {
+  width: 80px;
+  height: 80px;
+}
+
+.first {
+  flex: 0 !important;
+  padding-right: 45px;
+}
+.nickname {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  // margin-top: 20px;
+  margin-bottom: 5px;
+}
+.stats {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #B4BAD2;
+}
+.segmented_content {
+  display: flex;
+  align-items: center;
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A2AEC8;
+  padding-top: 25px;
+
+  @include _768 {
+    padding-top: unset;
+    padding-left: 25px;
+  }
+}
+.button_center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.chat_message {
+  margin-top: 10px;
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;  
+  color: #B3BDD2;
+}
+.info_all {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.2;
+}

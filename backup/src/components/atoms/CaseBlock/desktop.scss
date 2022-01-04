@@ -1,0 +1,147 @@
+@import "../../hooks/media_mixin.scss";
+
+.block {
+  padding: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.float_button {
+  padding: 10px 25px !important;
+}
+.info {
+  padding-left: 120px;
+}
+@include __1280 {
+  .block {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .float_button {
+    padding: 7px 15px !important;
+    top: 2px !important;
+    right: 2px !important;
+  }
+  .info {
+    padding-left: 60px;
+  }
+  .img {
+    height: 90px;
+  }
+  .label {
+    font-size: 35px;
+  }
+  .button {
+    font-size: 11px;
+    padding: 0px 4px !important;
+    min-width: 80px !important;
+  }
+  .span_block {
+    left: -20px;
+  }
+  .span_block_extra {
+    bottom: -16px;
+  }
+}
+
+@mixin change1 {
+  .block {
+    padding: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .float_button {
+    padding: 10px 25px !important;
+    top: 25px !important;
+    right: 25px !important;
+  }
+  .info {
+    padding-left: 100px;
+  }
+  .img {
+    height: 130px;
+  }
+  .label {
+    font-size: 45px;
+  }
+  .button {
+    min-width: 160px !important;
+  }
+  .span_block {
+    left: -5px;
+  }
+  .span_block_extra {
+    bottom: -10px;
+  }
+}
+
+@include __1280wo {
+  @include change1;
+}
+@include __1600 {
+  @include change1;
+  .block {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@mixin change2 {
+  .block {
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@include __1920 {
+  @include change2;
+}
+@include __1600wo {
+  @include change2;
+}
+
+@mixin change3 {
+  .block {
+    padding: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .label {
+    font-size: 65px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .button {
+    padding: 20px !important;
+    font-size: 25px !important;
+  }
+  .float_button {
+    padding: 15px 30px !important;
+    font-size: 18px !important;
+  }
+  .span_block {
+    font-size: 14px;
+    left: -10px;
+    padding: 6px;
+  }
+  .span_block_extra {
+    font-size: 16px;
+    padding: 6px;
+    bottom: -20px;
+  }
+  .img {
+    height: 165px;
+  }
+  .info {
+    padding-left: 135px;
+  }
+}
+
+@include __2560 {
+  @include change3;
+}
+@include __1920wo {
+  @include change3;
+}

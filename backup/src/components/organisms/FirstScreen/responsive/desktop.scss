@@ -1,0 +1,13 @@
+.container {
+  padding: 0 0 0 57px;
+}
+
+@media (max-height: 800px) {
+  .info {
+    transform: scale(0.8);
+  }
+
+  .advantages {
+    transform: scale(0.8);
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+// :global .no-flex-gap :local .item {
+//   margin-bottom: 30px;
+// }
+
+// :global .no-flex-gap :local .item:last-child {
+//   margin-bottom: 0;
+// }
+@mixin item-size($scale: 1) {
+  margin-bottom: 30px * $scale;
+}
+.item {
+  @include item-size();
+}
+.item:last-child {
+  margin-bottom: 0px;
+}
+.small {
+  .item {
+    @include item-size(0.5);
+  }
+}

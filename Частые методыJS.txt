@@ -1,6 +1,18 @@
-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
+rfce, rafcp
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+git commit -a --amend
 
-e.target.closest(".product__quantity-controls") поиск родителя с классом;       npm run build
+git config --global github.token
+
+const handleChange = ({ target }) => {
+    const name = target.name;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    setForm((prevForm) => {
+      return { ...prevForm, [name]: value };
+    });
+  };
+
+e.target.closest(".product__quantity-controls") поиск родителя с классом; САМЫЙ Предпочтительный!       npm run build
 element.classList.contains("product__quantity-control_dec");
 document.querySelectorAll(".product__quantity-control";
 element.nextElementSibling.textContent--;
@@ -21,16 +33,19 @@ document.body.append(div) вставить;
 element.innerHTML = htmlString;
 innerText: "Alexander Pierce"
 addEventListener("click",(e)=>
-str.trim()- удалить все пробелы из строки.
-.forEach() выполнить для каждого элемента массива;
-dataArr = data.split('') преобразовать строку дата в массив;
-ParentNode.append() позволяет добавлять DOMString объекты,
+ ///str.trim()- удалить все пробелы из строки.
 
-localStorage.removeItem('myCat'); // вернёт undefined
+ ///.forEach() выполнить для каждого элемента массива;
 
-node.remove()
+ ///dataArr = data.split('') преобразовать строку дата в массив;
 
-function getCookie(name) {
+ ///ParentNode.append() позволяет добавлять DOMString объекты,
+
+ ///localStorage.removeItem('myCat'); // вернёт undefined
+
+ ///node.remove()
+
+ ///function getCookie(name) {
    const cookies = document.cookie.split("; ");
    for (const c of cookie) {
       const [key, value] = c.split("=")
@@ -39,10 +54,53 @@ function getCookie(name) {
       }
    }
    return null
-}
+ }
 
-'../../../pic/goblin.png'
+ ///'../../../pic/goblin.png'
+
+ ///после загрузки страницы
  document.addEventListener("DOMContentLoaded", (e) => {
       this.randomHole();
-после загрузки страницы
     });
+
+ /// в классах сначало указываем класс исходного элемента а потом клас который присваивается.
+ await page.waitForSelector(".input-row__button.valid"); 
+
+ ///для развязки разметки
+ static get buttonSelector() { return ".input-row__button"; }
+ ///в классе вызываем через конструктор
+ const button = this.parentEl.querySelector(this.constructor.buttonSelector);
+        
+ ///установка фокуса на элемент формы
+ const first= [...form.elements].find(o=>!o.validity.valid);first.focus();
+
+ ///Позиционирование на offset*
+ const first= [...form.elements].find(o=>!o.validity.valid);
+ const error= document.createElement('div');
+ error.style.top= `${first.offsetTop+ first.offsetHeight/ 2- error.offsetHeight/ 2}px`;
+ error.style.left= `${first.offsetLeft+ first.offsetWidth}px`;
+ //И с учетом скролла
+ const { top,left}= first.getBoundingClientRect();
+ error.style.top= `${window.scrollY+ top+ first.offsetHeight/ 2- error.offsetHeight/ 2}px`;
+ error.style.left= `${window.scrollX+ left+ first.offsetWidth}px`;
+
+ ///Запись в LocalStorege
+ const fields= [...form.elements].map(({id, value})=> ({  id, value}));
+localStorage.setItem('fields',JSON.stringify(fields));
+
+ ///Читаем при загрузке страницы
+ try {
+ const fields= JSON.parse(localStorage.getItem('fields') 
+ if (fields!== null){
+  // TODO: fill fields}} 
+ catch(e)   {console.error(e);}
+
+ ///Запись при обновлении страницы
+ window.addEventListener('beforeunload',()=> {// TODO: save items here});
+
+ ///простой выбор свойства из обьекта
+ const type = "image";
+ const metod = {
+  text: "text123",
+  image: "img111",
+ }[type];

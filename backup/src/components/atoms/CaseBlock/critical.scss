@@ -1,0 +1,77 @@
+@import "../../hooks/media_mixin.scss";
+.flexed {
+  display: flex;
+}
+.info {
+  
+}
+.title {
+  margin-top: 25px;
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  &::before {
+    content: " ";
+    height: 29px;
+    position: absolute;
+    width: 38px;
+    margin-top: -10px;
+    margin-left: -8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url('./img/dots-1.svg');
+  }
+}
+.label {
+  font-family: "TT Norms Pro",sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+.button {
+  padding: 0px 0px !important;
+  // TODO: Razmeri
+  // padding: 0 25px;
+  margin-top: 20px !important;
+}
+.span_block {
+  position: absolute;
+  background: #EB5757;
+  opacity: 0.68;
+  border-radius: 100px;
+  left: -5px;
+  top: -5px;
+  padding: 2px 4px;
+}
+.span_block_extra {
+  position: absolute;
+  border-radius: 100px;
+  padding: 2px 4px;
+  background: linear-gradient(90deg, #8CD23C 0%, #417A00 100%);
+  bottom: -10px;
+  font-size: 12px;
+}
+.img {
+  height: 130px;
+  left: -50px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: absolute;
+}
+.dot {
+  padding: 2px;
+  border-radius: 100px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-position-x: 70%;
+  background-position-y: 10%;
+}

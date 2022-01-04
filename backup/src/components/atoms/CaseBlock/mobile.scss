@@ -1,0 +1,22 @@
+.block {
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  padding-left: 125px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.float_button {
+  position: absolute !important;
+  padding: 8px 20px !important;
+  min-height: auto !important;
+  min-width: auto !important;
+  top: 25px !important;
+  right: 25px !important;
+  border-radius: 100px 0px 100px 100px !important;
+}
+.info {
+  padding-left: 0px;
+}

@@ -1,0 +1,41 @@
+.container {
+  display: block;
+  width: 220px;
+  height: 75px;
+  box-shadow: 0 25px 35px rgba(226, 227, 243, 0.65);
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  display: flex;
+  padding-left: 24px;
+  padding-right: 20px;
+  flex-direction: column;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.title {
+  color: #cfd2ea;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.body {
+  color: #0b0c10;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.arrow {
+  width: 16px;
+}
+.icon {
+}
+.full {
+  width: 100%;
+}

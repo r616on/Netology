@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 358px;
+  color: #7f8ba3;
+  font-family: Acrom;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.weapon-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row-weapon {
+}
+
+.item {
+  margin-top: 24px;
+}

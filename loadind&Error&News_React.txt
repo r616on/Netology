@@ -1,0 +1,30 @@
+const [isLoading, setLoading] = useState(false);
+const [hasError, setError] = useState(null);
+const timestampRef = useRef();
+useEffect(() => {
+  const fetchNews = async () => {
+    const timestamp = Date.now();
+    timestampRef.current = timestamp;
+    setLoading(true);
+    try {
+      .......
+      setError(null);
+    } catch (e) {
+      setError(e);
+    } finally {
+      setLoading(false);
+    }
+  };
+  fetchNews();
+  const intervalId = setInterval(fetchNews, 5 * 1000);
+  return () => clearInterval(intervalId);
+}, []);
+
+return ( 
+ <Fragment>
+  {isLoading && <p>Loading...</p>}
+  <ul>
+   {news.map(o=><li key={o.id}>#{o.id}{o.content}</li>)}
+  </ul>
+ </Fragment>
+ )

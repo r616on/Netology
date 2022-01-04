@@ -1,0 +1,116 @@
+@mixin _768 {
+  // Tablet
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin _1024 {
+  // Laptop
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin _1199 {
+  // Enabled sidebar
+  @media (min-width: 1199px) {
+    @content;
+  }
+}
+@mixin _1294 {
+  // Enabled sidebar
+  @media (min-width: 1294px) {
+    @content;
+  }
+}
+@mixin _1320 {
+  // Enabled sidebar
+  @media (min-width: 1320px) {
+    @content;
+  }
+}
+@mixin _1500 {
+  // Enabled sidebar
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin _1640 {
+  // 1600x900
+  @media (min-width: 1640px) {
+    @content;
+  }
+}
+
+@mixin _2200 {
+  // 4K
+  @media (min-width: 2200px) {
+    @content;
+  }
+}
+
+/* New mixins */
+@mixin __resolution($wide) {
+  @media (min-width: #{$wide}px) {
+    @content;
+  }
+}
+@mixin __withoutSidebarResolution($wide) {
+  @each $selector in & {
+    @at-root :global(.woSid) {
+      & #{$selector} {
+        @include __resolution($wide) {
+          @content;
+        }
+      }
+    }
+  }
+}
+
+// Быстрые миксины для основных
+
+@mixin __1280 {
+  @include __resolution(1280) {
+    @content;
+  }
+}
+@mixin __1280wo {
+  @include __withoutSidebarResolution(1280) {
+    @content;
+  }
+}
+
+@mixin __1600 {
+  @include __resolution(1600) {
+    @content;
+  }
+}
+@mixin __1600wo {
+  @include __withoutSidebarResolution(1600) {
+    @content;
+  }
+}
+
+@mixin __1920 {
+  @include __resolution(1920) {
+    @content;
+  }
+}
+@mixin __1920wo {
+  @include __withoutSidebarResolution(1920) {
+    @content;
+  }
+}
+
+@mixin __2560 {
+  @include __resolution(2560) {
+    @content;
+  }
+}
+@mixin __2560wo {
+  @include __withoutSidebarResolution(2560) {
+    @content;
+  }
+}

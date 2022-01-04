@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Штурмовик",
+    "route": "",
+    "type": "stormtrooper",
+    "status": "active"
+  },
+  {
+    "title": "Медик",
+    "route": "",
+    "type": "medic"
+  },
+  {
+    "title": "Инженер",
+    "route": "",
+    "type": "engineer"
+  },
+  {
+    "title": "Снайпер",
+    "route": "",
+    "type": "sniper"
+  },
+  {
+    "title": "Ещё",
+    "route": "",
+    "type": "",
+    "status": "active"
+  }
+]

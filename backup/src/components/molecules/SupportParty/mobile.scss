@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 700;
+  position: relative;
+}
+.user {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.avatar {
+  display: flex;
+  max-width: 59px;
+  width: 100%;
+  max-height: 59px;
+  height: 100%;
+}
+.name {
+  margin-left: 11px;
+  margin-right: 11px;
+  align-self: center;
+  /* Style for "Shenderro" */
+  color: #000000;
+  font-family: "Acrom";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+.support {
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+}
+@media (max-width: 420px) {
+  .avatar {
+    display: none;
+  }
+}

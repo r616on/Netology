@@ -1,0 +1,106 @@
+.block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.input-block {
+  margin-top: 25px;
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 28px;
+  box-sizing: border-box;
+  box-shadow: 0 25px 35px rgba(226, 227, 243, 0.65);
+  background-color: #ffffff;
+}
+.title {
+  color: #000000;
+  font-family: "TT Norms Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 34px;
+}
+.input-row {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.input-input {
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #bbc6dc;
+  font-family: "TT Norms Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  border: none;
+}
+.input-icon {
+  width: 18px;
+  height: 22px;
+  margin-right: 4px;
+}
+.header {
+  margin-top: 25px;
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #0b0c10;
+  padding: 0;
+  &:after {
+    content: "";
+    margin: 15px 0 30px 0;
+    display: block;
+    width: 35px;
+    height: 3px;
+    left: 40px;
+    top: 80px;
+    background: linear-gradient(90deg, #8cd23c 0%, #417a00 100%);
+  }
+}
+.checkBox {
+  width: 100%;
+}
+.checkItem {
+  margin-bottom: 18px;
+}
+.checkText {
+  color: #a9b4c9;
+  font-family: "TT Norms Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.bold {
+  color: #000000;
+  font-weight: 500;
+}
+.color {
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  border-radius: 2px;
+  background-color: #ff4444;
+}
+.footer {
+  box-sizing: border-box;
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+}

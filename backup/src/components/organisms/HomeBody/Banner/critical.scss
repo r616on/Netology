@@ -1,0 +1,23 @@
+
+.account_block {
+  display: flex;
+}
+.account_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 7px 5px;
+}
+.accept_button {
+  border-radius: 4px !important;
+}
+.dot {
+  border-radius: 1000px;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+.dot_active {
+  border-radius: 1000px;
+  background: #fff;
+  padding: 6px;
+}

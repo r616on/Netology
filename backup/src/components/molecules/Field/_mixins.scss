@@ -1,0 +1,18 @@
+@mixin input-size($scale: 1) {
+  height: 75px * $scale;
+  font-size: 16px * $scale;
+  padding: 38px * $scale 24px * $scale 18px * $scale 24px * $scale;
+  box-shadow: 0px * $scale 25px * $scale 35px * $scale rgba(226, 227, 243, 0.65);
+  border-radius: 4px * $scale;
+  &:placeholder-shown {
+    padding: 29px * $scale 24px * $scale;
+  }
+}
+@mixin label-size($scale: 1) {
+  top: 19px * $scale;
+  left: 24px * $scale;
+}
+
+@mixin aside-size($scale: 1) {
+  right: 24px * $scale;
+}

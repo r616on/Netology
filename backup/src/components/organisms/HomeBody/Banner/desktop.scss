@@ -1,0 +1,115 @@
+@import "../../../hooks/media_mixin.scss";
+
+@mixin _1500 {
+  @media (min-width: 1500px){
+      @content;
+  }
+}
+
+@mixin desktopBanner {
+  .button-arrow {
+    display: flex !important;
+  }
+  .accept_media_rule {
+    @media (min-width: 1500px) { 
+      display: flex !important;
+      padding: 0px 30px !important;
+    }
+    @include __1920 {
+      font-size: 20px;
+    }
+  }
+  .accept_media_rule_revert {
+    display: none !important;
+  }
+  .block {
+    @media (min-width: 1500px) {
+      max-height: 110px;
+    }
+    @include __2560 {
+      max-height: 130px;
+    }
+  }
+
+  .banner {
+    height: 100px;
+    width: auto;
+    @include __2560 {
+      height: 130px;
+    }
+  }
+
+  .info {
+    flex-direction: row;
+  }
+  .account_name {
+    font-size: 16px;
+    line-height: 19px;
+    @include __1920 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .account_rank {
+    font-size: 14px;
+    line-height: 17px;
+    @include __1920 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .timer {
+    display: flex;
+    @include __1600 {
+      flex: 0.4;
+      justify-content: space-evenly;
+    }
+  }
+  .timer_number {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .timer_text {
+    font-size: 11px;
+    line-height: 13px;
+    @include __1920 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .slider {
+    position: absolute;
+    height: auto;
+    width: 70px;
+    justify-content: space-around;
+    bottom: 5px;
+    right: auto;
+    align-items: center;
+    flex-direction: row;
+  }
+  .row_first {
+    display: inline-flex;
+    flex-direction: row;
+    @include __1600 {
+      flex: 0.3;
+      justify-content: center;
+    }
+  }
+  .row_second {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    @include __1600 {
+      flex: 1;
+      justify-content: space-around;
+    }
+  }
+}
+
+@include __1280wo {
+  @include desktopBanner
+}
+@include __1600 {
+  @include desktopBanner
+}

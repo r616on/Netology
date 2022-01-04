@@ -1,0 +1,10 @@
+.container {
+  flex-direction: row;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.item {
+  width: 470px;
+  flex-shrink: 0;
+}

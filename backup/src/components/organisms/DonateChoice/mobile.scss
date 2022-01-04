@@ -1,0 +1,21 @@
+.specialties {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.weapon {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.footer {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

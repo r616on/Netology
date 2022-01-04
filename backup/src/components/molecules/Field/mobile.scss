@@ -1,0 +1,83 @@
+@import "_mixins";
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+@mixin placeholder {
+  font-family: "TT Norms Pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #cfd2ea;
+}
+
+.input {
+  @include input-size();
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: bold;
+  background: #ffffff;
+  border: none;
+  text-align: center;
+  &:placeholder-shown {
+    & + .label {
+      //display: none;
+      opacity: 0;
+    }
+  }
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    @include placeholder;
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    @include placeholder;
+  }
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    @include placeholder;
+  }
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    @include placeholder;
+  }
+  &:placeholder {
+    @include placeholder;
+  }
+}
+.center {
+  text-align: center;
+}
+
+.label {
+  @include placeholder;
+  @include label-size();
+  position: absolute;
+  opacity: 1;
+}
+
+.aside {
+  @include aside-size();
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.small {
+  $scale: 0.7;
+  .input {
+    @include input-size($scale);
+  }
+  .label {
+    @include label-size($scale);
+  }
+  .aside {
+    @include aside-size($scale);
+  }
+}

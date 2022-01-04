@@ -1,0 +1,14 @@
+
+.paginate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.arrow {
+  padding: 15px;
+  & > img{
+    height: 15px;
+    width: 15px;
+  }
+}

@@ -1,0 +1,28 @@
+.icon-row__block {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+  justify-content: center;
+  &.active {
+    // background: linear-gradient(36.87deg, #B139FE 18.57%, #1E61EB 80.26%);
+    &.user {
+      border-radius: 0px 100px 100px 0px;
+    }
+    &.box {
+      border-radius: 100px 0px 0px 100px;
+    }
+  }
+}
+.icon-row__icon {
+  padding: 12px 5px;
+  width: 29px;
+  z-index: 1;
+}
+.hiddenInput {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+}

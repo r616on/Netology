@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  :global .simplebar-placeholder {
+    display: none;
+  }
+}
+
+.list {
+  flex-grow: 1;
+}
+
+.info {
+  display: none;
+}

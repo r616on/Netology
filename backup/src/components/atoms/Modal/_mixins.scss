@@ -1,0 +1,39 @@
+@mixin container-size($scale: 1) {
+  padding-top: 40px * $scale;
+  padding-bottom: 40px * $scale;
+}
+
+@mixin content-size($scale: 1) {
+  width: 540px * $scale;
+  min-height: 400px * $scale;
+}
+
+@mixin inner-size($scale: 1) {
+  padding: 40px * $scale 0 0 0;
+  border-radius: 16px * $scale;
+  background: #f7f7fc url(background.png) top 51px * $scale center no-repeat;
+}
+
+@mixin header-size($scale: 1) {
+  font-size: 18px * $scale;
+  line-height: 23px * $scale;
+  padding: 0 40px * $scale;
+  &:after {
+    margin: 15px * $scale 0 30px * $scale 0;
+    width: 35px * $scale;
+    height: 3px * $scale;
+    left: 40px * $scale;
+    top: 80px * $scale;
+  }
+}
+@mixin body-size($scale: 1) {
+  padding: 14px * $scale 40px * $scale 40px * $scale 40px * $scale;
+}
+@mixin close-button-size($scale: 1) {
+  width: 65px * $scale;
+  height: 65px * $scale;
+  right: 40px * $scale;
+  top: 33px * $scale;
+  border: 2px * $scale solid #dde1f3;
+  box-shadow: 0px 15px * $scale 35px * $scale rgba(207, 213, 236, 0.65);
+}

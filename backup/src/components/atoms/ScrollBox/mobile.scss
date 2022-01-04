@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+
+  :global {
+    .simplebar-content-wrapper::-webkit-scrollbar,
+    .simplebar-hide-scrollbar::-webkit-scrollbar {
+      display:none
+    }
+    .simplebar-track {
+      display: flex;
+
+      &.simplebar-horizontal {
+        align-items: center;
+        background: rgba(30, 97, 235, 0.4);
+        border-radius: 10px;
+        height: 6px;
+        padding: 2px 0;
+      }
+
+      &.simplebar-vertical {
+
+      }
+
+      .simplebar-scrollbar {
+        position: relative;
+        height: 6px;
+        background-color: #b139fe;
+        border-radius: 20px;
+        border: 2px solid #1e61eb
+      }
+    }
+  }
+}

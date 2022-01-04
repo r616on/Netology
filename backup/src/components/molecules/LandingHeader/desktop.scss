@@ -1,0 +1,27 @@
+.container {
+  padding-top: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  position: relative;
+  top: 8px;
+  flex: 0 1 auto;
+  width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.actions {
+  position: relative;
+  top: 8px;
+}
+
+.toggle {
+  display: none;
+}
+
+.logo {
+  width: auto;
+}

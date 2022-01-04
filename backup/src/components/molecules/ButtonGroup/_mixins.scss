@@ -1,0 +1,25 @@
+@mixin container-size($scale: 1) {
+  gap: 18px * $scale;
+  margin: 19px * $scale 0 0 0;
+}
+
+@mixin alternative-choice-size($scale: 1) {
+  gap: 12px * $scale;
+  padding: 0 8px * $scale;
+}
+
+@mixin choice-text-size($scale: 1) {
+  font-size: 14px * $scale;
+  line-height: 17px * $scale;
+}
+
+@mixin group-size($scale: 1) {
+  gap: 7px * $scale;
+}
+
+@mixin no-flex-gap-size($scale: 1) {
+  margin-right: 12px * $scale;
+}
+@mixin no-flex-gap-size-main-choice($scale: 1) {
+  margin-right: 18px * $scale;
+}

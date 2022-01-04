@@ -1,0 +1,98 @@
+@import "../../hooks/media_mixin.scss";
+
+.container {
+  position: relative;
+  padding-top: 20px;
+  display: block;
+  @include _768 {
+    display: flex;
+    gap: 25px;
+  }
+}
+.block_contacts {
+  padding: 40px;
+  border-radius: 12px;
+  background: #f7f7fc;
+  margin-bottom: 24px;
+  @include _768 {
+    align-self: baseline;
+    margin-bottom: 0px;
+  }
+}
+.bodyContent {
+  flex: 1;
+  display: flex;
+  & > div {
+    width: 100%;
+  }
+}
+.blockHeader {
+  margin-bottom: 40px;
+}
+.title {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  position: relative;
+  display: inline;
+  & > span {
+    z-index: 1;
+  }
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: -9px;
+    background: url('./icons/pt.svg');
+    width: 40px;
+    height: 30px;
+    background-size: cover;
+    top: -12px;
+    z-index: 0;
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: -9px;
+    background: url('./icons/pt.svg');
+    width: 40px;
+    height: 30px;
+    background-size: cover;
+    bottom: -12px;
+    z-index: 0;
+  }
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+}
+// .headerCol {
+//   & > :nth-child(n) {
+//     padding: 12px;
+//   }
+// }
+.headerContent {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content_label {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #BEC5DF;
+}
+.content_label2 {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}

@@ -1,0 +1,30 @@
+.block {
+  padding: 5px;
+  background: #E5EAF5;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  gap: 25px;
+
+  overflow-x: auto;
+}
+.overflow {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  & > :nth-child(n) {
+    margin-right: 25px;
+  }
+}
+
+.no_livelenta {
+ display: none;
+ @media (max-width: 1198px)  {
+   display: flex;
+ }
+}

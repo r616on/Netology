@@ -1,0 +1,6 @@
+.container {
+  text-align: left;
+  &:before, &:after {
+    display: none;
+  }
+}

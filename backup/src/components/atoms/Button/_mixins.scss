@@ -1,0 +1,69 @@
+@mixin button-color($color) {
+  background: $color;
+  &:after {
+    background: $color;
+  }
+}
+
+@mixin link ($scale: 1){
+  min-width: auto;
+  padding: 0;
+  min-height: auto;
+  border-radius: none;
+  font-size: 14px * $scale;
+  font-weight: bold;
+  line-height: 17px * $scale;
+}
+
+
+@mixin standard-size ($scale: 1){
+  min-width: 160px * $scale;
+  padding: 0 53px * $scale;
+  min-height: 55px * $scale;
+  border-radius: 100px * $scale;
+  font-size: 14px * $scale;
+  font-weight: bold;
+  line-height: 17px * $scale;
+  &:after {
+    filter: blur(25px * $scale);
+  }
+  &:before {
+    border-radius: 100px * $scale;
+  }
+}
+
+@mixin big-size ($scale: 1) {
+  min-width: 275px * $scale;
+  min-height: 66px * $scale;
+  position: relative;
+  padding: 0 56px * $scale;
+  border-radius: 100px * $scale;
+  font-size: 16px * $scale;
+  line-height: 19px * $scale;
+  &:after {
+    filter: blur(35px * $scale);
+    border-radius: 100px * $scale;
+  }
+}
+
+@mixin medium-size ($scale: 1) {
+  text-transform: initial;
+  min-width: auto;
+  //min-width: 230px * $scale;
+  min-height: 65px * $scale;
+  position: relative;
+  padding: 0 45px * $scale;
+  border-radius: 100px * $scale;
+  font-size: 18px * $scale;
+  line-height: 21px * $scale;
+  &:after {
+    filter: blur(35px * $scale);
+    border-radius: 100px * $scale;
+  }
+}
+
+@mixin round ($scale: 1) {
+  min-width: 55px * $scale;
+  padding: 0;
+  border-radius: 100%;
+}

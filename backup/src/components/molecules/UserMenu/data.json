@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Мой профиль",
+    "route": "",
+    "type": "myProfile",
+    "active": true
+  },
+  {
+    "title": "Мои товары",
+    "route": "",
+    "type": "myProfile"
+  },
+  {
+    "title": "Стол заказов",
+    "route": "",
+    "type": "orderTable"
+  },
+  {
+    "title": "Достижения",
+    "route": "",
+    "type": "achievements"
+  },
+  {
+    "title": "Настройки",
+    "route": "",
+    "type": "settings"
+  },
+  {
+    "title": "Мои уведомления",
+    "route": "",
+    "type": "myNotifications"
+  },
+  {
+    "title": "Пополение и вывод",
+    "route": "",
+    "type": "depositAndWithdrawal"
+  },
+  {
+    "title": "Реферальная система",
+    "route": "",
+    "type": "referralSystem"
+  },
+  {
+    "title": "Выйти из аккаунта",
+    "route": "",
+    "type": "signOut"
+  }
+]

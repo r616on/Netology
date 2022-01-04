@@ -1,0 +1,26 @@
+@import "../../hooks/media_mixin.scss";
+
+.row {
+  display: flex;
+  flex-direction: column;
+  @include _768 {
+    flex-direction: row;
+  }
+  & > :nth-child(n) {
+    position: relative;
+    display: flex;
+    flex: 1;
+    margin-top: 36px;
+    @include _768 {
+      margin-top: unset;
+      margin-right: 36px;
+    }
+    &:last-child {
+      margin-right: 0px;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

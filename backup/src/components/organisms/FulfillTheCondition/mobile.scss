@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.row {
+  margin-top: 15px;
+}
+.item {
+  color: #738099;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 45px;
+  text-align: left;
+}
+.link-blue {
+  color: #1264ea;
+  font-family: "TT Norms - Bold";
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 45px;
+}

@@ -1,0 +1,149 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+////////
+.container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  max-width: 400px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease-in-out width;
+}
+.live-lenta {
+  max-width: 125px;
+  width: 100%;
+  background-color: #e5eaf5;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+  height: 100vh;
+}
+
+.live-lenta::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.live-lenta-shadow {
+  z-index: 30;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 150px;
+  margin-top: -100px;
+  background: #e4e8f4;
+  background: linear-gradient(0deg, #e4e8f4 0%, rgba(228, 232, 244, 0) 100%);
+  position: sticky;
+}
+
+.body {
+  flex: 1 1 auto;
+  background: #E1E1F1;
+  padding: 10px;
+  overflow: auto;
+  max-height: 100%;
+  height: 100vh;
+}
+.sidebar-header {
+  /* Style for "Rectangle" */
+  max-width: 420px;
+  width: 100%;
+  height: 150px;
+  background-image: url("./img/logo-background.png");
+  background-repeat: no-repeat;
+  box-shadow: -15px 15px 65px rgba(126, 70, 247, 0.45);
+  background-color: #dccdfd;
+  padding-top: 26px;
+  padding-left: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 45px;
+
+  height: 120px;
+  background-position-y: bottom;
+  background-size: cover;
+}
+.sidebar-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/logo_bacground_point.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  z-index: 2;
+
+}
+.sidebar-img {
+  width: 100%;
+}
+.sidebar-logo {
+  width: 200px;
+  display: flex;
+  align-self: center;
+}
+.sidebar-burger {
+  align-self: center;
+  margin-right: 46px;
+  z-index: 10;
+}
+/* --------------------- */
+
+
+.header_mobile {
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.block_statictics {
+  display: flex;
+  justify-content: center;
+}
+.cases {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+.filled {
+  display: flex;
+  flex: 1;
+}
+.bottom_footer {
+  margin-top: 25px;
+  display: flex;
+}

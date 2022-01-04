@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+:global .no-flex-gap :local .hint {
+  margin-bottom: 15px;
+}
+
+.hint {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #CFD2EA;
+}
+
+.body {
+  margin: 0 auto;
+}

@@ -1,0 +1,14 @@
+.disableFixed {
+  & > div {
+    position: relative;
+    transform: none;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    max-width: none;
+    min-height: auto;
+    max-height: none;
+    height: fit-content;
+    padding-top: 0px;
+  }
+}

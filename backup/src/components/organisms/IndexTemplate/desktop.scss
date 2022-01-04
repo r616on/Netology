@@ -1,0 +1,51 @@
+@import "../../hooks/media_mixin.scss";
+
+.sidebar {
+  display: flex;
+  opacity: 1;
+  // overflow: auto;
+  // height: 100%;
+  justify-content: flex-end;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
+.no-sidebar {
+  opacity: 0;
+  min-width: 0px;
+  width: 0px;
+}
+.live-lenta {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.body {
+  padding: 30px;
+  // max-width: auto;
+  overflow: overlay;
+  // height: 100vh;
+  max-width: 100vw;
+}
+
+.block_statictics {
+  display: none;
+}
+.cases {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 9px;
+  @include __1280 {
+    justify-content: center;
+  }
+  @include __1280wo {
+    justify-content: center;
+  }
+}
+.bottom_footer {
+  display: none;
+}
+.no_livelenta {
+ display: none;
+}

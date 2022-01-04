@@ -1,0 +1,37 @@
+@import "../../hooks/media_mixin.scss";
+
+.sidebar {
+  display: flex;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
+.no-sidebar {
+  width: 0px;
+}
+.live-lenta {
+  display: flex;
+}
+.body {
+  padding: 30px;
+}
+
+.block_statictics {
+  display: none;
+}
+.cases {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 9px;
+  @include __1280 {
+    justify-content: center;
+  }
+  @include __1280wo {
+    justify-content: center;
+  }
+}
+.bottom_footer {
+  display: none;
+}

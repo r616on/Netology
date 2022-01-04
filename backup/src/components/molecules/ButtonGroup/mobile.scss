@@ -1,0 +1,91 @@
+@import "_mixins";
+
+.container {
+  @include container-size();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  position: relative;
+}
+
+:global .no-flex-gap :local .main-choice {
+  @include no-flex-gap-size-main-choice();
+}
+
+.alternative-choice {
+  @include alternative-choice-size();
+  display: flex;
+  flex-direction: column;
+}
+
+:global .no-flex-gap :local .choice-text {
+  @include no-flex-gap-size();
+}
+
+.choice-text {
+  @include choice-text-size();
+  font-family: "TT Norms Pro", sans-serif;
+  color: #cfd2ea;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.group {
+  @include group-size();
+  display: flex;
+}
+
+:global .no-flex-gap :local .button {
+  @include no-flex-gap-size();
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.small {
+  $scale: 0.7;
+  width: 100%;
+  margin: 0;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+
+  :global .no-flex-gap :local .main-choice {
+    @include no-flex-gap-size-main-choice($scale);
+  }
+
+  .alternative-choice {
+    height: 45.5px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -30px;
+    background: #ffffff;
+    box-shadow: 0px 25px 35px rgba(226, 227, 243, 0.65);
+    border-radius: 100px;
+    @include alternative-choice-size($scale);
+  }
+  .main-choice {
+    position: relative;
+    z-index: 1;
+  }
+  .choice-text {
+    padding-left: 35px;
+  }
+  :global .no-flex-gap :local .choice-text {
+    @include no-flex-gap-size($scale);
+  }
+  .choice-text {
+    @include choice-text-size($scale);
+  }
+  .group {
+    @include group-size($scale);
+  }
+  :global .no-flex-gap :local .button {
+    @include no-flex-gap-size($scale);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

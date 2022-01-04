@@ -1,0 +1,40 @@
+$scale: 0.75;
+@mixin placeholder {
+  font-size: 14px * $scale;
+}
+
+.input {
+  width: 100%;
+  height: 75px * $scale;
+  font-size: 16px * $scale;
+  padding: 38px * $scale 24px * $scale 18px * $scale 24px * $scale;
+  box-shadow: 0 25px * $scale 35px * $scale rgba(226, 227, 243, 0.65);
+
+  &:placeholder-shown {
+    padding: 29px * $scale 24px * $scale;
+  }
+
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @include placeholder;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    @include placeholder;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    @include placeholder;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @include placeholder;
+  }
+  &:placeholder {
+    @include placeholder;
+  }
+}
+
+.label {
+  @include placeholder;
+  position: absolute;
+  top: 10px;
+  left: 24px * $scale;
+  opacity: 1;
+}

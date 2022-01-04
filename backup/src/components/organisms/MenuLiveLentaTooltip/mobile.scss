@@ -1,0 +1,47 @@
+
+.info-block-icon-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 5px 0px;
+  flex: 1;
+  align-items: center;
+}
+.info-block-icon {
+  width: 4px;
+  height: 4px;
+  background-color: #bdc6d9;
+  border-radius: 100%;
+  display: block;
+}
+.info_tooltip__corner {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.info_tooltip__button {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background: #FFFFFF;
+  color: #B3BFD7;
+  text-decoration: none;
+  overflow: hidden;
+  border: none;
+  font-family: "TT Norms Pro",sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 0px;
+  width: 100%;
+  text-align: left;
+  &:hover {
+    background: #F3F4FF;
+  }
+}
+.icon {
+  margin-right: 5px;
+}
+.info-block-icon-row {
+  display: none;
+}

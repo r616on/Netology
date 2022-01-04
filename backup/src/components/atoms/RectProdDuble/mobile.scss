@@ -1,0 +1,77 @@
+.container {
+  width: 220px;
+  height: 75px;
+  box-shadow: 0 25px 35px rgba(226, 227, 243, 0.65);
+  border-radius: 4px;
+
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.title {
+  height: 14px;
+  color: #cfd2ea;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.titleSecond {
+  height: 12px;
+  color: #cfd2ea;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.value {
+  height: 19px;
+  color: #0b0c10;
+  font-size: 16px;
+}
+.first {
+  width: 100px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 35px rgba(226, 227, 243, 0.65);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.second {
+  width: 114px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+  padding-top: 8px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgba(226, 227, 243, 0.65);
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.specRow {
+  height: 12px;
+  color: #cfd2ea;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: right;
+}
+.status {
+  height: 12px;
+  color: #cfd2ea;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}

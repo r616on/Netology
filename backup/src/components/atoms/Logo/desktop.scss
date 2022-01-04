@@ -1,0 +1,19 @@
+@keyframes slide {
+  0%, 10% {
+    background-position: -50px;
+  }
+  40%, 100% {
+    background-position: 214px;
+  }
+}
+
+.shine {
+  &:after {
+    animation-name: slide;
+  }
+}
+
+.container {
+  width: 214px;
+  height: 57px;
+}

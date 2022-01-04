@@ -1,0 +1,68 @@
+
+
+
+export const FETCH_SERVICES_REQUEST='FETCH_SERVICES_REQUEST'; 
+export const FETCH_SERVICES_FAILURE='FETCH_SERVICES_FAILURE';
+export const FETCH_SERVICES_SUCCESS='FETCH_SERVICES_SUCCESS';
+export const ADD_SERVICE_REQUEST='ADD_SERVICE_REQUEST';
+export const ADD_SERVICE_FAILURE='ADD_SERVICE_FAILURE';
+export const ADD_SERVICE_SUCCESS='ADD_SERVICE_SUCCESS';
+// специально оставили синхронным
+export const REMOVE_SERVICE='REMOVE_SERVICE';
+export const CHANGE_SERVICE_FIELD='CHANGE_SERVICE_FIELD';
+
+////////////////////////////////////////////////////////////////////
+//  Action Creator'ы:
+ export const fetchServicesRequest=()=>({
+   {type:FETCH_SERVICES_REQUEST}
+  });
+ export const fetchServicesFailure=message=>({
+   {
+     type:FETCH_SERVICES_FAILURE,
+     payload:{message}};
+  });
+ export const fetchServicesSuccess=items=>({
+   {
+     type:FETCH_SERVICES_SUCCESS,
+     payload:{items}};
+  });
+ // далее - по аналогии (кроме Remove и Change)
+ export const changeServiceField=(name,value)=>(
+   {type:CHANGE_SERVICE_FIELD,
+    payload:{name,value,},
+  });
+ export const removeService=id=>({
+   type:REMOVE_SERVICE,
+   payload:{id}
+  });
+//////////////////////////////////////////////////////////////
+const initialState={items:[],loading:false,error:null,}; 
+
+export default function serviceListReducer(state=initialState,action){
+  switch(action.type){
+    case FETCH_SERVICES_REQUEST:
+      return {...state,loading:true,error:null};
+    case FETCH_SERVICES_FAILURE:
+      const {error}= action.payload;
+    return {...state,loading:false,error};
+   case FETCH_SERVICES_SUCCESS:
+      const {items}=action.payload;
+      return {...state,items,loading:false,error:null};
+      // на сервере ничего не удаляем
+   case REMOVE_SERVICE:
+        const {id}=action.payload;
+        return {...state,items:state.items.filter(o=>o.id!==id)};
+   default:
+     return state;}}
+
+
+//////////////////////////////////////////
+	const logger = (store) => (next) => (action) => {
+  		console.log(store.getState());
+  		let result = next(action);
+  		console.log(store.getState());
+  		return result;
+	};
+
+
+

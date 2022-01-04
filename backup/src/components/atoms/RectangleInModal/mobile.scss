@@ -1,0 +1,29 @@
+// @import "_mixins";
+@mixin container-size($scale: 1) {
+  box-shadow: 0 15px * $scale 35px * $scale rgba(205, 207, 228, 0.35);
+  max-height: 75px * $scale;
+}
+.container {
+  @include container-size();
+  display: flex;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  height: 100%;
+  max-width: 220px;
+}
+.big {
+  max-width: 100%;
+  height: 65px;
+}
+@media (max-width: 420px) {
+  .container {
+    @include container-size(0.8);
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../hooks/media_mixin.scss";
+
+.block {
+  display: flex;
+  position: relative;
+  padding: 23px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.dots {
+  position: absolute;
+  width: 200px;
+}
+.label {
+  z-index: 1;
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: " ";
+    background: linear-gradient(36.87deg, #B139FE 18.57%, #1E61EB 80.26%);
+    border-radius: 100px;
+    width: 35px;
+    height: 5px;
+    margin-top: 10px;
+  }
+}
+.green {
+  &::after {
+    background: linear-gradient(90deg, #8CD23C 0%, #417A00 100%) !important;
+  }
+}
+.rightBlock {
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+
+  @include _768 {
+    bottom: auto;
+    right: 0px;
+  }
+}

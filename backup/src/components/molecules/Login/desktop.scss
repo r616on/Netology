@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  gap: 17px;
+}
+
+:global .no-flex-gap :local .social-button {
+  margin-right: 17px;
+}
+
+.social-button {
+  display: block;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    gap: 14px;
+  }
+  .btn {
+    padding: 0 47.7px;
+    min-height: 50px;
+    border-radius: 90px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+  }
+  .btn-vk {
+    min-height: 50px;
+    min-width: 50px;
+  }
+}

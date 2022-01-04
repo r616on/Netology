@@ -1,0 +1,21 @@
+.block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.block-two {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.footer {
+  margin-top: 26px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

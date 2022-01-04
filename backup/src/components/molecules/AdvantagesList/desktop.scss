@@ -1,0 +1,14 @@
+.container {
+  flex-direction: column;
+  width: 470px;
+  padding: 0;
+  gap: 35px;
+}
+
+.item {
+  width: auto;
+}
+
+:global .no-flex-gap :local .item {
+  margin-bottom: 35px;
+}

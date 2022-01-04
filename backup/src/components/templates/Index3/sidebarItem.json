@@ -1,0 +1,23 @@
+[
+  {
+    "title": "продать товар",
+    "to": "/",
+    "type": "sellAProduct",
+    "active": "true"
+  },
+  {
+    "title": "ЗАКЛАДКИ",
+    "to": "/",
+    "type": "bookmarks"
+  },
+  {
+    "title": "ИСТОРИЯ ПРОСМОТРА",
+    "to": "/",
+    "type": "browsingHistory"
+  },
+  {
+    "title": "ИСТОРИЯ ПОКУПОК И ПРОДАЖ",
+    "to": "/",
+    "type": "purchaseAndSalesHistory"
+  }
+]

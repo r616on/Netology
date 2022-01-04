@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 28px 11px 0 19px;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  padding: 4px 0 0 0;
+  margin: 0;
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  background: url(./title-text.svg) no-repeat;
+  background-size: 100%;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 0.59px;
+  line-height: 26px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 33px;
+    height: 2px;
+    left: 2px;
+    bottom: 5px;
+
+    background: linear-gradient(90deg, #8cd23c 0%, #417a00 100%);
+  }
+}
+
+.text {
+  margin: 7px 0 19px 0;
+  padding: 0 0 0 2px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.info {
+  margin: 0 auto;
+  //padding: 0 0 0 6px;
+}
+
+.advantages {
+  margin-top: 34px;
+}

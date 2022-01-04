@@ -1,0 +1,32 @@
+
+.icon-row {
+  background: #CAD2E4;
+  flex-direction: row;
+  flex: 1;
+  line-height: 0;
+  position: relative;
+  &__i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    // margin: 3px 0;
+    border-radius: 100px;
+    z-index: 0;
+    transition: border-radius .5s ease-out, width .2s ease-out, left .5s cubic-bezier(.32,1.25,.64,1);
+    background: linear-gradient(36.87deg, #B139FE 18.57%, #1E61EB 80.26%);
+    &.first {
+      border-radius: 0px 100px 100px 0px;
+    }
+    &.last {
+      border-radius: 100px 0px 0px 100px;
+    }
+  }
+}
+.round {
+  border-radius: 100px;
+}
+.no-margin-padding {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}

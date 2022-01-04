@@ -1,0 +1,198 @@
+@import "../../hooks/media_mixin.scss";
+
+.content_body {
+  max-width: 910px;
+  margin: 0 auto;
+}
+.badge {
+  border-radius: 100px;
+  z-index: 3;
+  padding: 6px 8px;
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  position: relative;
+  
+  color: #FFFFFF;
+}
+.gold {
+  background: linear-gradient(90deg, #A5703B 0%, #E6BB86 54.17%, #A5703B 100%);
+}
+.silver {
+  background: linear-gradient(90deg, #A4A8CB 0%, #C6C9E7 53.97%, #A4A8CB 100%);
+}
+.bronze {
+  background: linear-gradient(90deg, #96595A 0%, #BA7172 52.6%, #96595A 99.99%, #CD7F32 100%);
+  mix-blend-mode: normal;
+}
+
+.icon_star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.15;
+}
+
+.segmented_block_img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.segmented_block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+.segmented_img {
+  top: -40px;
+  position: absolute;
+  width: 130px;
+}
+
+.nickname {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.stats {
+  display: flex;
+}
+.left_child, .right_child {
+  padding: 5px;
+  text-align: center;
+  flex: 1;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left_child {
+  border-right: 1px solid #DBE0ED;
+}
+.title {
+  color: #000000;
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.label {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B4BAD2;
+}
+
+.your_place_title {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C5CFE4;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+.table {
+  width: 100%;
+  border-spacing: 0px 15px;
+  & > thead {
+    display: none;
+    & > tr {
+      & > td {
+        padding: 15px;
+        font-family: Acrom;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #C3CFE8;
+      }
+    }
+    @include _768 {
+      display: table-header-group;
+    }
+  }
+  & > tbody {
+    & > tr {
+      background: #FFFFFF;
+      box-shadow: 0px 25px 35px rgba(226, 227, 243, 0.65);
+
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+
+      @include _768 {
+        display: table-row;
+        margin-bottom: unset;
+      }
+      & > td {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        // border-radius: 8px;
+        font-family: Acrom;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1D222C;
+
+        justify-content: space-between;
+        align-items: center;
+        
+        @include _768 {
+          display: table-cell;
+          width: 25%;
+        }
+
+        &::before {
+          content: attr(data-label);
+          position: relative;
+          color: #B4BAD2;
+          @include _768 {
+            content: none;
+          }
+        }
+
+        &:first-child {
+          border-radius: 8px 0px 0px 8px;
+        }
+        &:last-child {
+          border-radius: 0px 8px 8px 0px;
+        }
+        & > div { // Maybe ava
+          display: flex;
+          align-items: center;
+          & > img {
+            width: 50px;
+            height: 50px;
+            filter: drop-shadow(0px 25px 35px rgba(226, 227, 243, 0.65));
+            border-radius: 100px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
