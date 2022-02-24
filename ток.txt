@@ -1,0 +1,6 @@
+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
+vscode://vscode.github-authentication/did-authenticate?windowid=1&code=d7f6c0512e4d0560846e&state=3cabf2c5-2f35-41f5-8e7f-10ecafc5cc2a
+
+L2HAmCFM86vrV2x4G7iP
+
+echo url=https://author@github.com | git credential reject
